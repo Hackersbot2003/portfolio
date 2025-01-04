@@ -48,7 +48,7 @@ function ContactOutlet() {
         </div>
 
 
-        <div className="bg-black border-opacity-20 border-[#e3ca85] border-2 p-6 rounded-lg font-[cinzel]  shadow-lg">
+        <div className="bg-black border-opacity-20 hover:shadow-md hover:scale-110 transition-transform duration-300 hover:shadow-white border-[#e3ca85] border-2 p-6 rounded-lg font-[cinzel]  shadow-lg">
           <h2 className="text-3xl text-[#e3ca85] mb-6 font-[cinzel] text-center">Get In Touch</h2>
           <form onSubmit={formHandler} className="space-y-6">
                           {[{ id: "name", placeholder: "Full Name", type: "text" },
@@ -63,7 +63,7 @@ function ContactOutlet() {
                       id={input.id}
                       name={input.id}
                       placeholder={input.placeholder}
-                      className="md:w-full   md:justify-between w-full  p-3 backdrop-brightness-75 bg-[#000] opacity-80 text-white border-2 border-opacity-40 border-[#e3ca85] rounded-lg shadow-sm focus:ring-2 focus:ring-[#e3ca85] focus:border-[#e3ca85] placeholder-gray-400"
+                      className="md:w-full hover:shadow-md hover:scale-105 transition-transform duration-300 hover:shadow-[#e3ca85]  md:justify-between w-full  p-3 backdrop-brightness-75 bg-[#000] opacity-80 text-white border-2 border-opacity-40 border-[#e3ca85] rounded-lg shadow-sm focus:ring-2 focus:ring-[#e3ca85] focus:border-[#e3ca85] placeholder-gray-400"
                       required
                     />
                   ) : (
@@ -71,7 +71,7 @@ function ContactOutlet() {
                       id={input.id}
                       name={input.id}
                       placeholder={input.placeholder}
-                      className="md:w-full   md:justify-between w-full  p-3 backdrop-brightness-75 bg-[#000] opacity-80 text-white border-2 border-opacity-40 border-[#e3ca85] rounded-lg shadow-sm focus:ring-2 focus:ring-[#e3ca85] focus:border-[#e3ca85] placeholder-gray-400"
+                      className="md:w-full  hover:shadow-md hover:scale-105 transition-transform duration-300 hover:shadow-white md:justify-between w-full  p-3 backdrop-brightness-75 bg-[#000] opacity-80 text-white border-2 border-opacity-40 border-[#e3ca85] rounded-lg shadow-sm focus:ring-2 focus:ring-[#e3ca85] focus:border-[#e3ca85] placeholder-gray-400"
                       rows="4"
                       required
                     ></textarea>
@@ -80,7 +80,7 @@ function ContactOutlet() {
               ))}
             <button
               type="submit"
-              className="w-40 bg-[#e3ca85] text-black  py-3 rounded-lg shadow-md font-[cinzel] font-bold hover:bg-[#ffd971] focus:ring-2 focus:ring-[#ffd971] transition-all"
+              className="w-40 bg-[#e3ca85] hover:bg-transparent hover:border-[#e3ca85] hover:text-[#e3ca85] hover:font-bold hover:border-2 hover:border-opacity-80 hover:shadow-md hover:scale-110  duration-300 hover:shadow-[#e3ca85] text-black  py-2 rounded-lg  font-[cinzel] font-bold  "
             >
               Submit
             </button>

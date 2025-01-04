@@ -37,14 +37,14 @@ function CoadingSkills() {
             <div>
               
               <img
-                className="w-20 rounded-md h-16"
+                className="w-20 hover:scale-110 transition-transform duration-300 rounded-md h-16"
                 src="https://th.bing.com/th/id/OIP.-Va0l4tUKPCHYT7beUOkvgHaHa?w=167&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
               />
             </div>
             <div>
               
               <img
-                className="w-30 rounded-md h-16 bg-black"
+                className="w-30 rounded-md h-16 hover:scale-110 transition-transform duration-300 bg-black"
                 src="https://th.bing.com/th?id=OIP.c9BbPNmGFrhbXYTdOTG6FAHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
               />
             </div>
@@ -53,20 +53,20 @@ function CoadingSkills() {
 
         </div>
 
-        <div className="w-2/3  flex-col  md:w-1/3 rounded-lg border-2 border-[#e3ca85] border-opacity-25 space-y-5 flex items-center justify-center mt-6 md:mt-0">
-          <h1 className="text-[28px] my-4 font-[cinzel]  ">projects</h1>
+        <div className="w-2/3  flex-col  md:w-1/3 rounded-lg border-2 border-[#e3ca85] hover:shadow-white hover:shadow-md border-opacity-25 space-y-5 flex items-center justify-center mt-6 md:mt-0">
+          <h1 className="text-[28px] my-4 font-[cinzel]  hover:text-[#e3ca85]  ">projects</h1>
          < >
          <div className="mx-10 grid  grid-cols-2 gap-5 justify-items-center items-center bg-transparent">
-            <div  className="bg-black md:w-40 md:h-40 flex justify-center  items-center rounded-lg">
+            <div  className="bg-black hover:scale-110 hover:shadow-[#e3ca85] hover:shadow-md transition-transform duration-300 md:w-40 md:h-40 flex justify-center  items-center rounded-lg">
               <img src="./src/assets/proj1.png"></img>
             </div>
-            <div className="bg-black md:w-40 md:h-40 flex justify-center items-center rounded-lg">
+            <div className="bg-black hover:scale-110 hover:shadow-[#e3ca85] hover:shadow-md  transition-transform duration-300 md:w-40 md:h-40 flex justify-center items-center rounded-lg">
               <img src="./src/assets/proj2.png"></img>
             </div>
-            <div className="bg-black md:w-40 md:h-40 flex justify-center items-center rounded-lg">
+            <div className="bg-black hover:scale-110 hover:shadow-[#e3ca85] hover:shadow-md  transition-transform duration-300 md:w-40 md:h-40 flex justify-center items-center rounded-lg">
               <img src="./src/assets/proj3.png"></img>
             </div>
-            <div className="bg-black md:w-40 md:h-40 flex justify-center items-center rounded-lg">
+            <div className="bg-black hover:scale-110 hover:shadow-[#e3ca85] hover:shadow-md  transition-transform duration-300 md:w-40 md:h-40 flex justify-center items-center rounded-lg">
               <img src="./src/assets/proj4.png"></img>
             </div>
           </div>
@@ -78,7 +78,7 @@ function CoadingSkills() {
                 href="https://github.com/Hackersbot2003"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-700 dark:text-gray-200 hover:text-white transition-colors duration-300"
+                className="text-gray-700 hover:scale-110 transition-transform duration-300 dark:text-gray-200 hover:text-white "
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +93,7 @@ function CoadingSkills() {
                 href="https://www.linkedin.com/in/vinay-patidar482003/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-700 dark:text-gray-200 hover:text-white transition-colors duration-300"
+                className="text-gray-700 hover:scale-110 transition-transform duration-300 dark:text-gray-200 hover:text-white "
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

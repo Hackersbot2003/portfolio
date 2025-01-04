@@ -5,14 +5,10 @@ import SpotlightCard from "./SpotlightCard";
 import { Photos } from "../constants";
 import ShowGallery from "./showGallery";
 import StarBorder from "./StarBorder";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function ProffesionalSkills() {
-  const navigate = useNavigate();
-
-  const handleNavigateToGallery = () => {
-    navigate("/Gallery");
-  };
+ 
   return (
     <div className="bg-black text-white py-10 flex flex-col justify-between items-center    px-0 ">
       <h2 className="text-4xl absolute  font-[cinzel] font-medium justify-center text-[#e3ca85]">
@@ -21,7 +17,7 @@ function ProffesionalSkills() {
 
       <div className="flex flex-col md:flex-row items-center justify-center  py-16 ">
         <div className="w-2/3   md:w-1/2 flex justify-center mt-8 md:mt-0">
-          <SpotlightCard className="rounded-lg p-8 ">
+          <SpotlightCard className="rounded-lg p-8   hover:shadow-lg hover:shadow-[#e3ca85] ">
             <div className="   justify-items-center items-center  md:w-80 md:h-96 r bg-transparent">
               <ShowGallery />
             </div>
@@ -47,7 +43,7 @@ function ProffesionalSkills() {
                 web design
               </h1>
               <img
-                className="w-25 rounded-md h-10"
+                className="w-25 hover:scale-110 transition-transform duration-300 rounded-md h-10"
                 src="https://th.bing.com/th?id=OIP.6vAaXFqh_Vq-NtE78gM60gHaDt&w=349&h=174&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
               />
             </div>
@@ -56,19 +52,23 @@ function ProffesionalSkills() {
                 Graphic design
               </h1>
               <img
-                className="w-25 rounded-md h-10 bg-black"
+                className="w-25 hover:scale-110 transition-transform duration-300 rounded-md h-10 bg-black"
                 src="https://th.bing.com/th/id/OIP.3rXv1Y97qpyRIyk3SvVuqQHaEc?pid=ImgDet&w=184&h=110&c=7&dpr=1.3"
               />
             </div>
           </div>
           <StarBorder
             as="button"
-            className="custom-class"
+            className="custom-class hover:scale-105 transition-transform duration-300"
             color="cyan"
             speed="5s"
-            onClick={handleNavigateToGallery}
+            
           >
+           <Link to="/Gallery">
+           <button>
             Gallery
+           </button>
+           </Link>
           </StarBorder>
         </div>
       </div>

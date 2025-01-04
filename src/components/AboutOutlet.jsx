@@ -44,7 +44,7 @@ Let’s bring your vision to life!
           <img
             src={aboutimage}
             alt="Vinay Patidar"
-            className="w-64 h-96 md:w-2/3  md:h-2/3   shadow-lg"
+            className="w-64 h-96 hover:scale-110 transition-transform duration-300 md:w-2/3  md:h-2/3   shadow-lg"
           />
         </div>
       </main>

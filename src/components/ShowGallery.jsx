@@ -28,7 +28,7 @@ function ShowGallery() {
             className="flex-shrink-0 w-full h-full"
           >
             <img
-              className="w-full h-full object-center object-contain rounded-lg"
+              className="w-full h-full object-center object-contain  rounded-lg"
               src={photo.src}
               alt={`Image ${photo.id}`}
             />

@@ -7,6 +7,7 @@ import ContactOutlet from "./ContactOutlet";
 import SpotlightCard from "./SpotlightCard.jsx";
 import vinayimage from "../assets/img2.jpg"
 import Arrow from "./Arrow.jsx";
+import Gallery from "./Gallery.jsx";
 const Hero = () => {
   return (
     <div>
@@ -14,15 +15,15 @@ const Hero = () => {
       <section className="flex flex-col  lg:flex-row   px-0 py-0 w-full sm:px-20 md:gap-x-20 items-center lg:justify-between space-x-10 bg-dark text-white min-h-screen ">
         {/* Profile Image */}
         <div className=" md:px-10 w-4/5  md:py-10 mt-7 md:left-12 justify-center  ">
-        <Arrow>
+        
           <img
             src={vinayimage}
             alt="Vinay Patidar"
-            className="rounded-full  m-auto  border-4 border-opacity-0 hover:border-opacity-100 opacity-80  hover:opacity-100 hover:backdrop-opacity-100  border-white w-64 md:w-96 md:h-96 h-64 object-center object-contain"
+            className="rounded-full hover:scale-110 transition-transform  duration-300 m-auto   border-opacity-0 hover:border-opacity-100 opacity-80  hover:opacity-100 hover:shadow-md  hover:shadow-[#e3ca85] w-64 md:w-96 md:h-96 h-64 object-center object-contain"
           />
-          </Arrow>
-           <div className="flex  top-80  right-0 flex-row justify-end ">
-            <SpotlightCard className="p-3 rounded-2xl md:hover:border-2  border-white border-opacity-40 hover:border-opacity-100 ">
+          
+           <div className="flex hover:scale-110 transition-transform duration-300 top-80  right-0 flex-row justify-end ">
+            <SpotlightCard className="p-3 rounded-2xl hover:shadow-md hover:shadow-[#e3ca85] md:hover:border-2  border-white border-opacity-40 hover:border-opacity-100 ">
               {/* Custom Icon */}
               <a
                 href="https://your-link.com"
@@ -94,7 +95,7 @@ const Hero = () => {
             <div className="flex space-x-4 py-12">
               {/* WhatsApp Icon */}
               <a
-                href="https://wa.me/yourphonenumber"
+                href="https://wa.me/9977096295"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:scale-110 transition-transform duration-300"
@@ -106,7 +107,7 @@ const Hero = () => {
                   width="32"
                   height="32"
                   viewBox="0 0 48 48"
-                  className="md:h-7 h-6 w-6 md:w-7"
+                  className="md:h-7 h-6 w-6 md:w-7 rounded-sm hover:shadow-md hover:shadow-white"
                 >
                   <path
                     fill="#fff"
@@ -138,7 +139,7 @@ const Hero = () => {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:scale-110 transition-transform duration-300"
+                className="hover:scale-110 transition-transform duration-300  rounded-sm hover:shadow-md hover:shadow-white"
               >
                 <svg
                   viewBox="0 0 32 32"
@@ -237,10 +238,10 @@ const Hero = () => {
               </a>
               {/* Gmail Icon */}
               <a
-                href="mailto:example@gmail.com"
+                href="mailto:482003vinaypatidar@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:scale-110 transition-transform duration-300"
+                className="hover:scale-110 transition-transform duration-300  rounded-sm hover:shadow-md hover:shadow-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -279,11 +280,11 @@ const Hero = () => {
         
         {/* Text Content */}
         <div className=" lg:text-left px-2 md:px-0 md:font-[montserrat] mt-8 lg:mt-0 lg:ml-12">
-          <div className="flex sm:py-10 flex-col md:space-x-24 -space-y-3 item-center space-x-14 md:-space-y-4">
+          <div className="flex  sm:py-10 flex-col md:space-x-24 -space-y-3 item-center space-x-14 md:-space-y-4">
             <span className="font-[cinzel] text-[30px] md:text-[40px]  text-[#e3ca85]   ">
               vinay
             </span>
-            <span className="font-[cinzel] text-[30px] md:text-[40px] text-[#e3ca85]  ">
+            <span className="font-[cinzel] text-[30px]  md:text-[40px] text-[#e3ca85]  ">
               patidar
             </span>
           </div>
@@ -333,6 +334,7 @@ const Hero = () => {
       </section>
       <AboutOutlet />
       <CoadingSkills />
+      <Gallery className="hidden "/>
 
       <ContactOutlet />
       

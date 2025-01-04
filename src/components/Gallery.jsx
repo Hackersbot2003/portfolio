@@ -1,14 +1,15 @@
 import React from "react";
 import { Photos } from "../constants";
-import Navbar from "./navebar";
-import Footer from "./Footer";
+
 
 function Gallery(){
+  console.log(Photos);
+  
   return (
     
     
     <div className="relative font-inter antialiased">
-      <Navbar/>
+      
       <main className="relative min-h-screen flex flex-col justify-center bg-black overflow-hidden">
         <div className="w-full max-w-5xl mx-auto px-4 md:px-6 py-10">
           <div className="block flex-col justify-items-center">
@@ -29,7 +30,7 @@ function Gallery(){
                     key={image.id}
                     src={image.src}
                     alt={image.alt}
-                    className="w-full rounded-xl shadow"
+                    className="w-full rounded-xl hover:shadow-lg hover:shadow-white hover:scale-105 transition-transform duration-300 shadow"
                   />
                 ))}
               </div>
@@ -38,7 +39,7 @@ function Gallery(){
           </div>
         </div>
       </main>
-      <Footer/>
+      
 
      
     </div>

@@ -18,7 +18,7 @@ function Navbar() {
       <header className="bg-black shadow-lg">
         <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
           {/* Branding */}
-          <div className="flex flex-col items-center -space-y-2">
+          <div className="flex flex-col hover:scale-105 transition-transform duration-300 items-center -space-y-2">
             <span className="font-[cinzel] text-[23px] text-[#e3ca85] font-normal">
               <Link to={"/Home"}> vinay</Link>
             </span>
@@ -28,15 +28,15 @@ function Navbar() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden sm:flex space-x-8 items-center">
-            {["Home", "About", "Project", "Contact"].map((link) => (
+          <div className="hidden sm:flex space-x-8  items-center">
+            {["Home", "About", "Project", "Contact","Gallery"].map((link) => (
              <Link to={`/${link}`}>
               <a
                 key={link}
-                href={`#${link.toLowerCase()}`}
-                className="text-white hover:text-[#e3ca85] hover:border-[#e3ca85] border-black border-b-2 duration-300 font-[Montserrat] text-[15px]"
+                href={`#${link}`}
+                className="text-white  hover:text-[#e3ca85]   hover:border-[#e3ca85] border-black border-b-2 duration-300 font-[Montserrat] text-[15px]"
               >
-                {link}
+                <button className="hover:scale-110 transition-transform duration-300">{link}</button>
               </a>
              </Link>
             ))}
@@ -48,7 +48,7 @@ function Navbar() {
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-700 dark:text-gray-200 hover:text-white transition-colors duration-300"
+              className="text-gray-700 hover:scale-110 dark:text-gray-200 hover:text-white transition-colors duration-300"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +63,7 @@ function Navbar() {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-700 dark:text-gray-200 hover:text-white transition-colors duration-300"
+              className="text-gray-700 hover:scale-110 dark:text-gray-200 hover:text-white transition-colors duration-300"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +97,7 @@ function Navbar() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="h-8 w-8 text-white"
+                  className="h-8 w-8 hover:scale-110 transition-transform duration-300 hover:text-[#e3ca85] text-white"
                 >
                   <path
                     fillRule="evenodd"
@@ -112,7 +112,7 @@ function Navbar() {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="sm:hidden fixed inset-0 bg-black bg-opacity-95 z-50">
+          <div className="sm:hidden fixed inset-0 bg-black bg-opacity-80 z-50">
             <div className="flex justify-between items-center p-4">
               {/* Social Media Icons */}
               <div className="flex space-x-4">
@@ -120,7 +120,7 @@ function Navbar() {
                   href="https://github.com/Hackersbot2003"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-700 dark:text-gray-200 hover:text-white transition-colors duration-300"
+                  className="text-gray-700 hover:scale-110  dark:text-gray-200 hover:text-white transition-colors duration-300"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -135,7 +135,7 @@ function Navbar() {
                   href="https://linkedin.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-700 dark:text-gray-200 hover:text-white transition-colors duration-300"
+                  className="text-gray-700 hover:scale-110  dark:text-gray-200 hover:text-white transition-colors duration-300"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -154,7 +154,7 @@ function Navbar() {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="h-8 w-8 text-white"
+                  className="h-8 w-8 text-white hover:scale-110 transition-transform duration-300 hover:text-[#ff0000]"
                 >
                   <path
                     fillRule="evenodd"
@@ -164,16 +164,16 @@ function Navbar() {
                 </svg>
               </button>
             </div>
-            <div className="flex flex-col items-center justify-center space-y-6 h-full">
+            <div className="flex flex-col bg-black bg-opacity-15 items-center  justify-center space-y-6 h-full">
               {["Home", "About", "Project", "Contact"].map((link) => (
                <Link to={`/${link}`}>
                 <a
                   key={link}
                   href={`#${link.toLowerCase()}`}
                   onClick={toggleMobileMenu}
-                  className="text-white text-2xl font-[Montserrat] hover:text-[#e3ca85] transition duration-300"
+                  className="text-white text-2xl  font-[Montserrat] hover:text-[#e3ca85] transition duration-300"
                 >
-                  {link}
+                  <button className="hover:scale-110 hover:border-b-2 hover:border-[#e3ca85] transition-transform duration-300">{link}</button>
                 </a>
                </Link>
               ))}

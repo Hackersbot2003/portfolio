@@ -7,6 +7,7 @@ import { Photos } from "./constants/index.js";
 import ContactOutlet from "./components/ContactOutlet";
 import CoadingSkills from "./components/CoadingSkills.jsx";
 import Gallery from "./components/Gallery.jsx";
+
 import {
   BrowserRouter as Router,
   Route,
@@ -29,7 +30,7 @@ function App() {
           <Route path="/Contact" element={<ContactOutlet />} />
           <Route path="/Project" element={<CoadingSkills />} />
           <Route path="/" element={<Hero/>}/>
-          <Route path="/gallery" elements={<Gallery/>}/>
+          <Route path="/Gallery" elements={<Gallery/>}/>
         </Routes>
         {/* <Hero/>
         <AboutOutlet />
