@@ -3,7 +3,7 @@ import Navebar from "./components/navebar";
 import Footer from "./components/Footer";
 import Hero from "./components/hero";
 import AboutOutlet from "./components/AboutOutlet";
-import { Photos } from "./constants/index.js"
+import { Photos } from "./constants/Photosdata.js";
 import ContactOutlet from "./components/ContactOutlet";
 import CoadingSkills from "./components/CoadingSkills.jsx";
 import Gallery from "./components/Gallery.jsx";
@@ -30,7 +30,7 @@ function App() {
           <Route path="/Contact" element={<ContactOutlet />} />
           <Route path="/Project" element={<CoadingSkills />} />
           <Route path="/" element={<Hero/>}/>
-          <Route path="/Gallery" elements={<Gallery/>}/>
+          <Route path="/Gallery" elements={<Gallery />}/>
         </Routes>
         {/* <Hero/>
         <AboutOutlet />

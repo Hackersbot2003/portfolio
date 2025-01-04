@@ -1,9 +1,13 @@
 import { useEffect, useState } from "react";
 import React from "react";
-import ShowGallery from "./showGallery";
+
+import ShowGallery from "./ShowGallery";
 import { InfiniteSlider } from "./InfiniteSlider";
-import { Photos } from "../constants";
 import ProffesionalSkills from "./ProffesionalSkills";
+import project1 from "../assets/proj1.png"
+import project2 from "../assets/proj2.png"
+import project3 from "../assets/proj3.png"
+import project4 from "../assets/proj4.png"
 
 function CoadingSkills() {
   
@@ -58,16 +62,16 @@ function CoadingSkills() {
          < >
          <div className="mx-10 grid  grid-cols-2 gap-5 justify-items-center items-center bg-transparent">
             <div  className="bg-black hover:scale-110 hover:shadow-[#e3ca85] hover:shadow-md transition-transform duration-300 md:w-40 md:h-40 flex justify-center  items-center rounded-lg">
-              <img src="./src/assets/proj1.png"></img>
+              <img src={project1}></img>
             </div>
             <div className="bg-black hover:scale-110 hover:shadow-[#e3ca85] hover:shadow-md  transition-transform duration-300 md:w-40 md:h-40 flex justify-center items-center rounded-lg">
-              <img src="./src/assets/proj2.png"></img>
+              <img src={project2}></img>
             </div>
             <div className="bg-black hover:scale-110 hover:shadow-[#e3ca85] hover:shadow-md  transition-transform duration-300 md:w-40 md:h-40 flex justify-center items-center rounded-lg">
-              <img src="./src/assets/proj3.png"></img>
+              <img src={project3}></img>
             </div>
             <div className="bg-black hover:scale-110 hover:shadow-[#e3ca85] hover:shadow-md  transition-transform duration-300 md:w-40 md:h-40 flex justify-center items-center rounded-lg">
-              <img src="./src/assets/proj4.png"></img>
+              <img src={project4}></img>
             </div>
           </div>
          </>

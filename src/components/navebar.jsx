@@ -29,7 +29,7 @@ function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden sm:flex space-x-8  items-center">
-            {["Home", "About", "Project", "Contact"].map((link) => (
+            {["Home", "About", "Project", "Contact","Gallery"].map((link) => (
              <Link to={`/${link}`}>
               <a
                 key={link}
@@ -165,7 +165,7 @@ function Navbar() {
               </button>
             </div>
             <div className="flex flex-col bg-black bg-opacity-15 items-center  justify-center space-y-6 h-full">
-              {["Home", "About", "Project", "Contact"].map((link) => (
+              {["Home", "About", "Project", "Contact","Gallery"].map((link) => (
                <Link to={`/${link}`}>
                 <a
                   key={link}

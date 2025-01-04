@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Photos } from "../constants"; // Ensure Photos is imported correctly
+import {Photos} from "../constants/Photosdata.js" ;// Ensure Photos is imported correctly
 
 function ShowGallery() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -22,7 +22,9 @@ function ShowGallery() {
           transform: `translateX(-${currentIndex * 100}%)`,
         }}
       >
-        {Photos.map((photo) => (
+ 
+    
+      {Photos.map((photo) => (
           <div
             key={photo.id}
             className="flex-shrink-0 w-full h-full"
@@ -37,6 +39,6 @@ function ShowGallery() {
       </div>
     </div>
   );
-}
+} 
 
 export default ShowGallery;

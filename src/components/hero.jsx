@@ -6,7 +6,6 @@ import ProffesionalSkills from "./ProffesionalSkills";
 import ContactOutlet from "./ContactOutlet";
 import SpotlightCard from "./SpotlightCard.jsx";
 import vinayimage from "../assets/img2.jpg"
-import Arrow from "./Arrow.jsx";
 import Gallery from "./Gallery.jsx";
 const Hero = () => {
   return (

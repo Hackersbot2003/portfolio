@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import React from "react";
 import Typewriter from "./Typewriting";
 import SpotlightCard from "./SpotlightCard";
-import { Photos } from "../constants";
-import ShowGallery from "./showGallery";
+import { Photos } from "../constants/Photosdata.js";
+import ShowGallery from "./ShowGallery";
 import StarBorder from "./StarBorder";
 import { Link, useNavigate } from "react-router-dom";
 import Gallery from "./Gallery";
@@ -58,19 +58,19 @@ function ProffesionalSkills() {
               />
             </div>
           </div>
-          {/* <StarBorder
+          <StarBorder
             as="button"
             className="custom-class hover:scale-105 transition-transform duration-300"
             color="cyan"
             speed="5s"
             
           >
-           <Link to="/gallery">
-           <button onClick={"/gallery"}>
+           <Link to="/Gallery">
+           <button onClick={"/Gallery"}>
             Gallery
            </button>
            </Link>
-          </StarBorder> */}
+          </StarBorder>
         </div>
       </div>
       <div className="flex justify-center mt-6 font-montserrat">
