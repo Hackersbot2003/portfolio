@@ -136,7 +136,7 @@ const Hero = () => {
 
               {/* Instagram Icon */}
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/vinay_patidar482003?igsh=MWlrenhjdTZhdWY3dQ=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:scale-110 transition-transform duration-300  rounded-sm hover:shadow-md hover:shadow-white"

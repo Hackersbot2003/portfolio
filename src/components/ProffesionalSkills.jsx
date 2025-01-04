@@ -6,6 +6,7 @@ import { Photos } from "../constants";
 import ShowGallery from "./showGallery";
 import StarBorder from "./StarBorder";
 import { Link, useNavigate } from "react-router-dom";
+import Gallery from "./Gallery";
 
 function ProffesionalSkills() {
  
@@ -57,19 +58,19 @@ function ProffesionalSkills() {
               />
             </div>
           </div>
-          <StarBorder
+          {/* <StarBorder
             as="button"
             className="custom-class hover:scale-105 transition-transform duration-300"
             color="cyan"
             speed="5s"
             
           >
-           <Link to="/Gallery">
-           <button>
+           <Link to="/gallery">
+           <button onClick={"/gallery"}>
             Gallery
            </button>
            </Link>
-          </StarBorder>
+          </StarBorder> */}
         </div>
       </div>
       <div className="flex justify-center mt-6 font-montserrat">

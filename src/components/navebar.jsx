@@ -29,7 +29,7 @@ function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden sm:flex space-x-8  items-center">
-            {["Home", "About", "Project", "Contact","Gallery"].map((link) => (
+            {["Home", "About", "Project", "Contact"].map((link) => (
              <Link to={`/${link}`}>
               <a
                 key={link}
@@ -45,7 +45,7 @@ function Navbar() {
           {/* Desktop Social Media Icons */}
           <div className="flex space-x-4">
             <a
-              href="https://github.com"
+              href="https://github.com/Hackersbot2003"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-700 hover:scale-110 dark:text-gray-200 hover:text-white transition-colors duration-300"
@@ -60,7 +60,7 @@ function Navbar() {
               </svg>
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/vinay-patidar482003"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-700 hover:scale-110 dark:text-gray-200 hover:text-white transition-colors duration-300"
@@ -132,7 +132,7 @@ function Navbar() {
                   </svg>
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/vinay-patidar482003"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-700 hover:scale-110  dark:text-gray-200 hover:text-white transition-colors duration-300"

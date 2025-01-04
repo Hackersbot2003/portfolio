@@ -3,7 +3,7 @@ import Navebar from "./components/navebar";
 import Footer from "./components/Footer";
 import Hero from "./components/hero";
 import AboutOutlet from "./components/AboutOutlet";
-import { Photos } from "./constants/index.js";
+import { Photos } from "./constants/index.js"
 import ContactOutlet from "./components/ContactOutlet";
 import CoadingSkills from "./components/CoadingSkills.jsx";
 import Gallery from "./components/Gallery.jsx";

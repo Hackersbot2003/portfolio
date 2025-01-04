@@ -24,13 +24,13 @@ function Gallery(){
             {/* Masonry Layout with CSS Columns */}
             <div>
               <h2 className="font-bold text-lg mb-4">With CSS Columns</h2>
-              <div className="columns-2 md:columns-4 gap-4 space-y-4">
+              <div className="columns-2 md:columns-4 gap-4 space-y-7 space-x-5  md:space-y-4">
                 {Photos.map((image) => (
                   <img
                     key={image.id}
                     src={image.src}
                     alt={image.alt}
-                    className="w-full rounded-xl hover:shadow-lg hover:shadow-white hover:scale-105 transition-transform duration-300 shadow"
+                    className="md:w-full  w-11/12 rounded-xl hover:shadow-lg hover:shadow-white hover:scale-105 transition-transform duration-300 shadow"
                   />
                 ))}
               </div>
